@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    username: root
+    password: Trhien@@1!
+    url: jdbc:mysql://localhost:3306/fake_store
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: hoanganh123nha@gmail.com
+    password: jgmo jyny wuez volo
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+jwt:
+  secretKey: "7db023a314668464f6ada576ebf320e13d7839d2c1c36cfb8d472f9fccf702f6"
+  valid-duration: 172800 # in second, = 2 days
+  refreshable-duration: 259200 # in second, = 3 days
+
+
+
